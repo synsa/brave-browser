@@ -68,6 +68,7 @@
   },
   "homepage": "https://github.com/brave/brave#readme",
   "dependencies": {
+    "aphrodite": "^1.2.5",
     "commander": "^2.9.0",
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.6",
