@@ -41,7 +41,7 @@
       },
       "antimuon": {
         "dir": "src/brave",
-        "branch": "master",
+        "branch": "ledger",
         "repository": {
           "url": "git@github.com:brave/antimuon.git"
         }
