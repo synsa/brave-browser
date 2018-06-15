@@ -10,6 +10,7 @@ program
   .version(process.env.npm_package_version)
   .option('--gclient_file <file>', 'gclient config file location')
   .option('--gclient_verbose', 'verbose output for gclient')
+  .option('--gclient_cachedir <directory>', 'cache directory of git mirrors for gclient')
   .option('--run_hooks', 'run gclient hooks')
   .option('--run_sync', 'run gclient sync')
   .option('--submodule_sync', 'run submodule sync')
@@ -45,7 +46,7 @@ projectNames.forEach((project) => {
 })
 
 if (updatedVersion || program.init || program.run_sync) {
-  util.gclientSync({verbose: config.gClientVerbose})
+  util.gclientSync({verbose: config.gClientVerbose, cache_dir: config.gClientCacheDir})
 }
 
 if (updatedVersion || program.init || program.run_hooks) {
